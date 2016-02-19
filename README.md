@@ -1,6 +1,7 @@
 # emitjs
 
-An event emitter replacement, can be plugged in anywhere a node-like EventEmitter or flux-like Dispatcher is required
+An event emitter replacement with no dependencies.
+Can be plugged in anywhere a node-like EventEmitter or flux-like Dispatcher is required.
 
 ## Usage
 
@@ -41,4 +42,69 @@ single.emit();
 single.off(callback) //..or singleOffCallback()
 
 ```
+
+## API (Multi Event)
+
+### .on(event, subscriber [, subscriber, subscriber, ..])
+### .subscribe(event, subscriber [, subscriber, subscriber, ..])
+### .addListener(event, subscriber [, subscriber, subscriber, ..])
+### .register(event, subscriber [, subscriber, subscriber, ..])
+
+Add subscriber(s) for event.
+Returns a function that will remove the added subscriber(s) when called.
+
+### .one(event, subscriber [, subscriber, subscriber, ..])
+### .once(event, subscriber [, subscriber, subscriber, ..])
+
+Add subscriber(s) for event, firing only once.
+Returns a function that will remove the added subscriber(s) when called.
+
+### .emit(event [, arg, arg, ..])
+### .dispatch(event[, arg, arg, ..])
+
+Emit event with the provided arguments.
+
+### .off(event, subscriber [, subscriber, subscriber, ..])
+### .unsubscribe(event, subscriber [, subscriber, subscriber, ..])
+### .unregister(event, subscriber [, subscriber, subscriber, ..])
+### .removeListener(event, subscriber [, subscriber, subscriber, ..])
+
+Remove the provided subscribers for event.
+
+### .off(event)
+
+Remove all subscribers for event.
+
+
+## API (Single Event)
+
+### .on(subscriber [, subscriber, subscriber, ..])
+### .subscribe(subscriber [, subscriber, subscriber, ..])
+### .addListener(subscriber [, subscriber, subscriber, ..])
+### .register(subscriber [, subscriber, subscriber, ..])
+
+Add subscriber(s).
+Returns a function that will remove the added subscriber(s) when called.
+
+### .one(subscriber [, subscriber, subscriber, ..])
+### .once(subscriber [, subscriber, subscriber, ..])
+
+Add subscriber(s), firing only once.
+Returns a function that will remove the added subscriber(s) when called.
+
+### .emit([arg, arg, ..])
+### .dispatch([arg, arg, ..])
+
+Emit event with the provided arguments.
+
+### .off(subscriber [, subscriber, subscriber, ..])
+### .unsubscribe(subscriber [, subscriber, subscriber, ..])
+### .unregister(subscriber [, subscriber, subscriber, ..])
+### .removeListener(subscriber [, subscriber, subscriber, ..])
+
+Remove the provided subscribers.
+
+### .off()
+
+Remove all subscribers.
 
