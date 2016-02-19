@@ -1,6 +1,6 @@
 {
   "name": "emitjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An event emitter replacement, can be plugged in anywhere a node-like EventEmitter or flux-like Dispatcher is required",
   "author": "Alex Lau",
   "license": "MIT",
@@ -18,3 +18,4 @@
     "gulp-uglify": "*"
   }
 }
+
