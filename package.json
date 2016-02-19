@@ -1,0 +1,20 @@
+{
+  "name": "emitjs",
+  "version": "1.0.2",
+  "description": "An event emitter replacement, can be plugged in anywhere a node-like EventEmitter or flux-like Dispatcher is required",
+  "author": "Alex Lau",
+  "license": "MIT",
+  "keywords": [
+    "emitter",
+    "dispatcher"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfal/emit.js"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "gulp": "*",
+    "gulp-uglify": "*"
+  }
+}
