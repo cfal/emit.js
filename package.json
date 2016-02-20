@@ -1,7 +1,7 @@
 {
   "name": "emitjs",
-  "version": "1.0.4",
-  "description": "An event emitter replacement, can be plugged in anywhere a node-like EventEmitter or flux-like Dispatcher is required",
+  "version": "1.0.5",
+  "description": "An event emitter replacement with no dependencies. Can be plugged in anywhere a node EventEmitter or flux Dispatcher is required.",
   "author": "Alex Lau",
   "license": "MIT",
   "keywords": [

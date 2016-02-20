@@ -1,7 +1,7 @@
 # emitjs
 
 An event emitter replacement with no dependencies.
-Can be plugged in anywhere a node-like EventEmitter or flux-like Dispatcher is required.
+Can be plugged in anywhere a node EventEmitter or flux Dispatcher is required.
 
 ## Usage
 
