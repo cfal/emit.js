@@ -27,7 +27,7 @@ obj.emit('event');
 obj.off('event', callback);
 
 // .. or remove using the callback from .on()
-offCallback()
+offCallback();
 
 // Create and use as a single-event emitter
 var single = new Emitter();
@@ -39,7 +39,7 @@ singleOffCallback = single.on(callback);
 single.emit();
 
 // Remove the callback like above
-single.off(callback) //..or singleOffCallback()
+single.off(callback) //..or singleOffCallback();
 
 ```
 
