@@ -28,7 +28,7 @@ Emitter.prototype.one = function(event) {
     if (typeof event === 'function') {
         var args = Array.prototype.slice.call(arguments);
         args.unshift(DEFAULT_EVENT);
-        return this.on.apply(this, args);
+        return this.one.apply(this, args);
     }
 
     var _this = this;
